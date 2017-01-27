@@ -34,7 +34,7 @@ public class Listfragment extends Fragment {
         if(view ==null) {
             view = inflater.inflate(R.layout.second_fragment, container, false);
             listView = (ListView) view.findViewById(R.id.list);
-            arrayAdapter = new ArrayAdapter<String>(activity,android.R.layout.simple_list_item_1,names);
+            arrayAdapter = new ArrayAdapter<String>(activity,R.layout.notepadetextview,names);
             listView.setAdapter(arrayAdapter);
         }
         return view ;
